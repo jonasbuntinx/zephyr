@@ -9,4 +9,4 @@ const version = "0.3.2";
 const platform = { win32: "Windows", darwin: "macOS" }[process.platform] || "Linux";
 const url = `https://github.com/coot/zephyr/releases/download/v${version}/${platform}.tar.gz`
 
-request.get(url).pipe(tar.x({"C": './'}));
+request.get(url).pipe(tar.x({"C": './..'}));
