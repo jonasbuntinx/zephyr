@@ -6,7 +6,7 @@
 const request = require("request");
 const tar = require("tar");
 const version = "0.3.2";
-const platform = { win32: "windows", darwin: "osx" }[process.platform] || "linux";
+const platform = { win32: "Windows", darwin: "macOS" }[process.platform] || "Linux";
 const url = `https://github.com/coot/zephyr/releases/download/${version}/${platform}.tar.gz`
 
 request.get(url).pipe(tar.x({"C": './'}));
