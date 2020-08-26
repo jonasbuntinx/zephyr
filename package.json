@@ -1,6 +1,6 @@
 {
   "name": "zephyr",
-  "version": "NPM_VERSION",
+  "version": "0.3.2",
   "description": "Tree shaking tool and partial evaluator for PureScript CoreFn AST.",
   "homepage": "https://github.com/coot/zephyr",
   "repository": {
