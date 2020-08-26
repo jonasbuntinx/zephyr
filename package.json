@@ -12,7 +12,7 @@
   },
   "author": "Marcin Szamotulski",
   "bin": {
-    "zephyr": "./zephyr/zephyr"
+    "zephyr": "./zephyr"
   },
   "dependencies": {
     "request": "^2.88.0",
