@@ -1,0 +1,28 @@
+{
+  "name": "zephyr",
+  "version": "NPM_VERSION",
+  "description": "Tree shaking tool and partial evaluator for PureScript CoreFn AST.",
+  "homepage": "https://github.com/coot/zephyr",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coot/zephyr.git"
+  },
+  "scripts": {
+    "postinstall": "node ./install.js"
+  },
+  "author": "Marcin Szamotulski",
+  "bin": {
+    "zephyr": "./zephyr"
+  },
+  "dependencies": {
+    "request": "^2.88.0",
+    "tar": "^4.4.8"
+  },
+  "keywords": [
+    "purescript",
+    "tree-shaking",
+    "dce",
+    "build-tool"
+  ],
+  "license": "MPL-2.0"
+}

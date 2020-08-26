@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+// This file is only used on Windows. In *nix NPM installations it's replaced
+// with the actual zephyr binary.
+
+const cp = require("child_process");
+
+// Ignore SIGINT (Ctrl-C) because we don't want to terminate this process from
+// it (#483). Zephyr.exe will handle it for us
+process.on('SIGINT', () => {});
+
+const zephyr = cp.spawn(__dirname + '/zephyr.exe', process.argv.slice(2), {stdio: 'inherit'});
+zephyr.on('error', (err) => {
+    console.log("Downloading the zephyr binary failed. Please try reinstalling the zephyr npm package.");
+});
